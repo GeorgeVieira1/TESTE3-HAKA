@@ -1,4 +1,4 @@
-name: Pipeline Testes Automatizados API FORNECEDOR
+name: Pipeline Testes Automatizados API fornecedor
 # executa o workflow toda vez que for realizado um push ou pull-request no repositório
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
         with: 
-            name: report-api-user-ci
+            name: report-api-fornecedor-ci
             path: ./reports/report-api-fornecedor-ci.html
             # armazena o relatório html por 30 dias
             retention-days: 30
