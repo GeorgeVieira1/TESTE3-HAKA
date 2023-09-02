@@ -1,4 +1,4 @@
-name: Pipeline Testes Automatizados API FORNECEDOR
+name: FORNECEDOR
 # executa o workflow toda vez que for realizado um push ou pull-request no repositório
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  automacao-api-user-ci:
+  automacao-Fornecedor-ci:
     runs-on: ubuntu-latest
 
     steps:
