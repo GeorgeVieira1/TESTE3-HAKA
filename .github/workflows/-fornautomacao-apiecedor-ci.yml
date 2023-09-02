@@ -26,7 +26,7 @@ jobs:
         run: sudo npm install -g newman-reporter-htmlextra
         
       - name: Passo 4 - Executar testes automatizados de API da collection e environment e Gerar relatório html 
-        run: newman run ./Suppliers.postman_collection.json -e ./supplicold.postman_environment.json --delay-request 2 --reporters cli, -r htmlextra --reporter-htmlextra-export ./reports/report-api-user-ci.html
+        run: newman run ./Suppliers.postman_collection.json -e ./supplicold.postman_environment.json --delay-request 2 --reporters cli, -r htmlextra --reporter-htmlextra-export ./reports/report-api-fornecesor-ci.html
    
       - name: Passo 5 - Armazenar relatório html
         uses: actions/upload-artifact@v3
