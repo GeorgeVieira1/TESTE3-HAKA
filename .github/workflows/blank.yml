@@ -1,4 +1,4 @@
-name: FORNECEDOR
+name: Pipeline Testes Automatizados API FORNECEDOR
 # executa o workflow toda vez que for realizado um push ou pull-request no repositório
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  automacao-Fornecedor-ci:
+  automacao-api-fornecedor-ci:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,6 +34,6 @@ jobs:
         if: ${{ always() }}
         with: 
             name: report-api-user-ci
-            path: ./reports/report-api-user-ci.html
+            path: ./reports/report-api-fornecedor-ci.html
             # armazena o relatório html por 30 dias
             retention-days: 30
