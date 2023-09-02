@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: fornecedor
+name: fornecedor CI
 
 # Controls when the action will run. 
 on:
@@ -37,7 +37,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-        run: newman run Suppliers.postman_collection -e supplicold.postman_environmentjson --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
+        run: newman run ./Suppliers.postman_collection.json -e ./supplicold.postman_environment.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
    
       # Runs a set of commands using the runners shell
       - name: Step 4 Archive production artifacts
